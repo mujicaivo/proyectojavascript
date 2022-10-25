@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="Este es un sitio web para solicitar creditos y conocer las distintas posbilidades de financiacion"
+    />
+    <link rel="stylesheet" href="./styles/index.css" type="text/css" />
+    <title>Creditos 420</title>
+  </head>
+  <body>
+    <h1 class="title">Creditos 420</h1>
+    <div class="card" id="card">
+      <h2 class="head-card">Cuanto dinero necesitas:</h2>
+      <div class="body-card">
+        <div>
+          <label for="monto">Ingresar monto:</label>
+          <input
+            class="money-input"
+            placeholder="Ingresar monto"
+            type="number"
+            id="monto"
+            name="monto"
+          />
+        </div>
+        <div>
+          <label>Cuotas:</label>
+          <select id="cuotas">
+            <option selected value="cuotas">Cuotas</option>
+            <option value="1">1</option>
+            <option value="3">3</option>
+            <option value="6">6</option>
+            <option value="9">9</option>
+            <option value="12">12</option>
+            <option value="24">24</option>
+            <option value="48">48</option>
+          </select>
+        </div>
+        <div>
+          <text>Tasa de Interes:</text>
+          <text id="interes"></text>
+        </div>
+        <div>
+          <text>Total a pagar:</text>
+          <text id="adeudado"></text>
+        </div>
+        <button id="button">Calcular</button>
+      </div>
+    </div>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
